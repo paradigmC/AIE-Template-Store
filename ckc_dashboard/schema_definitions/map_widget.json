@@ -1,0 +1,120 @@
+{
+  "metaInfo": {
+    "wType": "GeoSpatial",
+    "version": "v1",
+    "heading": "Disaster Management",
+    "description": "Disaster Management",
+    "userActions": [
+      {
+        "actionName": "onGenerateButton",
+        "info": {
+          "type": "button",
+          "title": "Generate Report"
+        },
+        "request": {
+          "mcc": {
+            "mccId": "5b118018d1c46c1e0a722a0d",
+            "tenantId": "poland.com",
+            "applicationId": "CKC_DASHBOARD",
+            "mapping_config_name": "ShowAllVehicles-map",
+            "operation": "DATA",
+            "dataSourceType": "Rest"
+          },
+          "requestVariables": {
+            "id": 1
+          }
+        }
+      },
+      {
+        "actionName": "onVideoStream",
+        "info": {
+          "type": "button",
+          "title": "Video Stream"
+        },
+        "request": {
+          "endpointName": "",
+          "mcc": {
+            "mccId": "5b118018d1c46c1e0a722a0d",
+            "tenantId": "poland.com",
+            "applicationId": "CKC_DASHBOARD",
+            "mapping_config_name": "ShowAllVehicles-map",
+            "operation": "DATA",
+            "dataSourceType": "Rest"
+          },
+          "requestVariables": {
+            "id": 1
+          }
+        }
+      }
+    ],
+    "middlewareActions": [
+      {
+        "info": {
+          "type": "videoStream"
+        },
+        "request": {
+          "mcc": {
+            "target_config_name": "aggregatee",
+            "target_group_name": "EMSDashboard",
+            "mapping_config_name": "EMSDummyUrl-aggregatee",
+            "mapping_group_name": "CKC",
+            "groupName": "EMSDashboard",
+            "configName": "aggregatee"
+          },
+          "requestVariables": {
+            "toDate": "",
+            "fromDate": ""
+          }
+        }
+      }
+    ]
+  },
+  "data": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": {
+          "lat": 76.7755012,
+          "lon": 30.7017952
+        }
+      },
+      "properties": {
+        "name": "Disaster Management",
+        "cusID": {
+          "type": "number",
+          "required": true,
+          "label": "CCMS ID",
+          "val": "123",
+          "hidden":"false",
+          "rawVal":"123",
+          "units":""
+        },
+        "powerConsumption": {
+          "type": "string",
+          "required": true,
+          "label": "Lights Connected",
+          "val": "1000KW",
+          "hidden":"false",
+          "rawVal":"1000",
+          "units":"KW"
+        },
+        "videoStream": {
+          "type": "stream",
+          "required": true,
+          "label": "Camara Info",
+          "val": {
+            "controls": true,
+            "maximize": true,
+            "height": 100,
+            "width": 100,
+            "type": "rtsp",
+            "autoPlay": true,
+            "url": "rtsp://10.236.197.33"
+          },
+          "hidden":"false"
+        }
+      }
+    }
+  ]
+}

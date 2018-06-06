@@ -1,0 +1,111 @@
+{
+  "metaInfo": {
+    "wType": "Table",
+    "heading": "VMD SingleLineText Post",
+    "description": "Variable Message Display Details",
+    "version": "v1",
+    "userActions": [
+      {
+        "actionName": "onTableSubmit",
+        "info": {
+          "type": "button",
+          "title": "Submit"
+        },
+        "request": {
+          "mcc": {
+            "mccId": "5b118018d1c46c1e0a722a0d",
+            "tenantId": "poland.com",
+            "applicationId": "CKC_DASHBOARD",
+            "mapping_config_name": "ShowAllVehicles-map",
+            "operation": "DATA",
+            "dataSourceType": "Rest"
+          },
+          "requestVariables": {
+            "fromData": "2"
+          }
+        }
+      }
+    ],
+    "middlewareActions": [],
+    "frequency": 3000
+  },
+  "data": {
+    "columns": [
+      {
+        "key": "acceType",
+        "type": "string",
+        "sortable": true,
+        "dataFilter": true,
+        "hidden": false,
+        "label": "Access Type"
+      },
+      {
+        "key": "fare",
+        "type": "string",
+        "dataFilter": true,
+        "hidden": false,
+        "sortable": true,
+        "label": "Fare"
+      },
+      {
+        "key": "installationDate",
+        "type": "datetime",
+        "hidden": false,
+        "sortable": true,
+        "label": "Installation Date"
+      },
+      {
+        "key": "fromDate",
+        "type": "datetime",
+        "hidden": true,
+        "sortable": true,
+        "label": "From Date"
+      }
+    ],
+    "rows": [
+      {
+        "accessType": {
+          "val": "Male",
+          "rawVal":"value",
+          "units":"U"
+        },
+        "fare": {
+          "val": "Free",
+          "rawVal":"value",
+          "units":"U"
+        },
+        "installationDate": {
+          "val": "2017-10-11T06:25:06.649Z",
+          "rawVal":"value",
+          "units":"U"
+        }
+      }
+    ]
+  },
+  "xform": [
+    {
+      "actionName": "onTableSubmit",
+      "fields": [
+        {
+          "type": "date",
+          "lable": "From Date",
+          "format": "mm-dd-yyyy",
+          "value": "",
+          "name": "fromData",
+          "id": "fromDate",
+          "placeholder": "From Date",
+          "validations": {
+            "min": "",
+            "max": "",
+            "required": true
+          },
+          "errors": {
+            "required": "From Date is Required",
+            "min": "",
+            "max": ""
+          }
+        }
+      ]
+    }
+  ]
+}

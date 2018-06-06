@@ -1,0 +1,32 @@
+{
+  "metaInfo": {
+    "wType": "Summary",
+    "version": "v1",
+    "heading": "Variable Message Display",
+    "description": "Variable Message Display",
+    "frequency": 3000
+  },
+  "data": [
+    {
+      "key": "Total VMD's",
+      "val": 0
+    },
+    {
+      "key": "Active VMD's",
+      "val": 0
+    },
+    {
+      "key": "InActive VMD's",
+      "val": 0
+    }
+  ],
+  "link": {
+    "url": "s",
+    "active": true
+  },
+  "health": {
+    "status":"good",
+    "color":"#FFF",
+    "active": true
+  }
+}
