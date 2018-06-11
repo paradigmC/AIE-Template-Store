@@ -1,121 +1,331 @@
 {
-  "metaInfo": {
-    "wType": "WeatherForecast",
-    "heading": "Weather Forecast",
-    "description": "Weather Forecast",
-    "version": "v1",
-    "frequency": 3000
-  },
-  "data": [
-    {
-      "date": {
-        "val": "2018-02-07T00:00:00.000Z",
-        "label": "Date",
-        "type": "date",
-        "required": "true",
-        "hidden":"false",
-        "rawVal":"2018-02-07T00:00:00.000Z",
-        "units":""
-      },
-      "daySequence": {
-        "val": 1,
-        "label": "Day Sequence",
-        "type": "number",
-        "required": "true",
-        "hidden":"false",
-        "rawVal":"1",
-        "units":""
-      },
-      "rainprobability": {
-        "val": 0,
-        "label": "Rain Probability",
-        "type": "number",
-        "required": "true",
-        "hidden":"false",
-        "rawVal":"0",
-        "units":""
-      },
-      "rainQuantity": {
-        "val": 0,
-        "label": "Rain Quantity",
-        "type": "number",
-        "required": "true",
-        "hidden":"false",
-        "rawVal":"0",
-        "units":""
-      },
-      "humidityMax": {
-        "val": 85,
-        "label": "Maximum Humidity",
-        "type": "number",
-        "required": "true",
-        "hidden":"false",
-        "rawVal":"85",
-        "units":""
-      },
-      "humidityMinimum": {
-        "val": 40,
-        "label": "Minimum Humidity",
-        "type": "number",
-        "required": "true",
-        "hidden":"false",
-        "rawVal":"40",
-        "units":""
-      },
-      "temperatureMax": {
-        "val": "32",
-        "label": "Maximum Temperature",
-        "type": "string",
-        "required": "true",
-        "hidden":"false",
-        "rawVal":"32",
-        "units":""
-      },
-      "temperatureMinimum": {
-        "val": "20",
-        "label": "Minimum Temperature",
-        "type": "string",
-        "required": "true",
-        "hidden":"false",
-        "rawVal":"20",
-        "units":""
-      },
-      "description": {
-        "val": "partly cloudy",
-        "label": "Description",
-        "type": "string",
-        "required": "true",
-        "hidden":"false",
-        "rawVal":"partly cloudy",
-        "units":""
-      },
-      "icon": {
-        "val": "partlycloudy",
-        "label": "Icon",
-        "type": "string",
-        "required": "true",
-        "hidden":"false",
-        "rawVal":"partlycloudy",
-        "units":""
-      },
-      "windSpeed": {
-        "val": 17,
-        "label": "Wind Speed",
-        "type": "number",
-        "required": "true",
-        "hidden":"false",
-        "rawVal":"17",
-        "units":""
-      },
-      "WindDirection": {
-        "val": "SW",
-        "label": "Wind Direction",
-        "type": "string",
-        "required": "true",
-        "hidden":"false",
-        "rawVal":"310",
-        "units":""
+  "$schema": "http://json-schema.org/draft-03/schema#",
+  "type": "object",
+  "properties": {
+    "result": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "icon_url": {
+                "type": "string",
+                "required": true
+              },
+              "date": {
+                "type": "string",
+                "required": true
+              },
+              "rain_qty": {
+                "type": "object",
+                "required": true,
+                "properties": {
+                  "val": {
+                    "type": "number",
+                    "required": true
+                  },
+                  "label": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "units": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "type": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "required": {
+                    "type": "boolean",
+                    "required": true
+                  },
+                  "rawVal": {
+                    "type": "number",
+                    "required": true
+                  }
+                }
+              },
+              "rh_min": {
+                "type": "object",
+                "required": true,
+                "properties": {
+                  "val": {
+                    "type": "number",
+                    "required": true
+                  },
+                  "label": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "units": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "type": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "required": {
+                    "type": "boolean",
+                    "required": true
+                  },
+                  "rawVal": {
+                    "type": "number",
+                    "required": true
+                  }
+                }
+              },
+              "icon": {
+                "type": "string",
+                "required": true
+              },
+              "description": {
+                "type": "object",
+                "required": true,
+                "properties": {
+                  "val": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "label": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "type": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "required": {
+                    "type": "boolean",
+                    "required": true
+                  }
+                }
+              },
+              "temp_max": {
+                "type": "object",
+                "required": true,
+                "properties": {
+                  "val": {
+                    "type": "number",
+                    "required": true
+                  },
+                  "label": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "units": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "type": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "required": {
+                    "type": "boolean",
+                    "required": true
+                  },
+                  "rawVal": {
+                    "type": "number",
+                    "required": true
+                  }
+                }
+              },
+              "wind_spd": {
+                "type": "object",
+                "required": true,
+                "properties": {
+                  "val": {
+                    "type": "number",
+                    "required": true
+                  },
+                  "label": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "units": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "type": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "required": {
+                    "type": "boolean",
+                    "required": true
+                  },
+                  "rawVal": {
+                    "type": "number",
+                    "required": true
+                  }
+                }
+              },
+              "Wind_shrt": {
+                "type": "object",
+                "required": true,
+                "properties": {
+                  "val": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "label": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "type": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "required": {
+                    "type": "boolean",
+                    "required": true
+                  }
+                }
+              },
+              "temp_min": {
+                "type": "object",
+                "required": true,
+                "properties": {
+                  "val": {
+                    "type": "number",
+                    "required": true
+                  },
+                  "label": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "units": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "type": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "required": {
+                    "type": "boolean",
+                    "required": true
+                  },
+                  "rawVal": {
+                    "type": "number",
+                    "required": true
+                  }
+                }
+              },
+              "rh_max": {
+                "type": "object",
+                "required": true,
+                "properties": {
+                  "val": {
+                    "type": "number",
+                    "required": true
+                  },
+                  "label": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "units": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "type": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "required": {
+                    "type": "boolean",
+                    "required": true
+                  },
+                  "rawVal": {
+                    "type": "number",
+                    "required": true
+                  }
+                }
+              },
+              "day_sequence": {
+                "type": "object",
+                "required": true,
+                "properties": {
+                  "val": {
+                    "type": "number",
+                    "required": true
+                  },
+                  "label": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "type": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "required": {
+                    "type": "boolean",
+                    "required": true
+                  }
+                }
+              },
+              "rain_prob": {
+                "type": "object",
+                "required": true,
+                "properties": {
+                  "val": {
+                    "type": "number",
+                    "required": true
+                  },
+                  "label": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "units": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "type": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "required": {
+                    "type": "boolean",
+                    "required": true
+                  },
+                  "rawVal": {
+                    "type": "number",
+                    "required": true
+                  }
+                }
+              }
+            }
+          },
+          "required": true
+        },
+        "metaInfo": {
+          "type": "object",
+          "required": true,
+          "properties": {
+            "wType": {
+              "type": "string",
+              "required": true
+            },
+            "heading": {
+              "type": "string",
+              "required": true
+            },
+            "description": {
+              "type": "string",
+              "required": true
+            },
+            "version": {
+              "type": "string",
+              "required": true
+            }
+          }
+        }
       }
     }
-  ]
+  }
 }

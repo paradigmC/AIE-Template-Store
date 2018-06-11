@@ -1,0 +1,257 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema#",
+  "type": "object",
+  "properties": {
+    "result": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "geometry": {
+                "type": "object",
+                "required": true,
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "coordinates": {
+                    "type": "object",
+                    "required": true,
+                    "properties": {
+                      "lat": {
+                        "type": "number",
+                        "required": true
+                      },
+                      "lon": {
+                        "type": "number",
+                        "required": true
+                      }
+                    }
+                  }
+                }
+              },
+              "name": {
+                "type": "string",
+                "required": true
+              },
+              "parentId": {
+                "type": "number",
+                "required": true
+              },
+              "metricProperties": {
+                "type": "object",
+                "required": true,
+                "properties": {
+                  "temperature": {
+                    "type": "object",
+                    "required": true,
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "required": true
+                      },
+                      "required": {
+                        "type": "boolean",
+                        "required": true
+                      },
+                      "val": {
+                        "type": "number",
+                        "required": true
+                      },
+                      "unit": {
+                        "type": "string",
+                        "required": true
+                      }
+                    }
+                  },
+                  "humidity": {
+                    "type": "object",
+                    "required": true,
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "required": true
+                      },
+                      "required": {
+                        "type": "boolean",
+                        "required": true
+                      },
+                      "val": {
+                        "type": "number",
+                        "required": true
+                      },
+                      "unit": {
+                        "type": "string",
+                        "required": true
+                      }
+                    }
+                  },
+                  "noise": {
+                    "type": "object",
+                    "required": true,
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "required": true
+                      },
+                      "required": {
+                        "type": "boolean",
+                        "required": true
+                      },
+                      "val": {
+                        "type": "number",
+                        "required": true
+                      },
+                      "unit": {
+                        "type": "string",
+                        "required": true
+                      }
+                    }
+                  },
+                  "airQuality": {
+                    "type": "object",
+                    "required": true,
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "required": true
+                      },
+                      "required": {
+                        "type": "boolean",
+                        "required": true
+                      },
+                      "val": {
+                        "type": "number",
+                        "required": true
+                      }
+                    }
+                  },
+                  "co2": {
+                    "type": "object",
+                    "required": true,
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "required": true
+                      },
+                      "required": {
+                        "type": "boolean",
+                        "required": true
+                      },
+                      "val": {
+                        "type": "number",
+                        "required": true
+                      },
+                      "unit": {
+                        "type": "string",
+                        "required": true
+                      }
+                    }
+                  },
+                  "pressure": {
+                    "type": "object",
+                    "required": true,
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "required": true
+                      },
+                      "required": {
+                        "type": "boolean",
+                        "required": true
+                      },
+                      "val": {
+                        "type": "number",
+                        "required": true
+                      },
+                      "unit": {
+                        "type": "string",
+                        "required": true
+                      }
+                    }
+                  }
+                }
+              },
+              "entityProperties": {
+                "type": "object",
+                "required": true,
+                "properties": {
+                  "name": {
+                    "type": "object",
+                    "required": true,
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "required": true
+                      },
+                      "val": {
+                        "type": "string",
+                        "required": true
+                      },
+                      "required": {
+                        "type": "boolean",
+                        "required": true
+                      }
+                    }
+                  },
+                  "providerName": {
+                    "type": "object",
+                    "required": true,
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "required": true
+                      },
+                      "required": {
+                        "type": "boolean",
+                        "required": true
+                      },
+                      "val": {
+                        "type": "string",
+                        "required": true
+                      }
+                    }
+                  }
+                }
+              },
+              "timestamp": {
+                "type": "string",
+                "required": true
+              },
+              "identifier": {
+                "type": "string",
+                "required": true
+              },
+              "dbOperation": {
+                "type": "string",
+                "required": true
+              },
+              "tenant": {
+                "type": "string",
+                "required": true
+              },
+              "tenantId": {
+                "type": "string",
+                "required": true
+              },
+              "granularity": {
+                "type": "string",
+                "required": true
+              },
+              "configName": {
+                "type": "string",
+                "required": true
+              }
+            }
+          },
+          "required": true
+        }
+      }
+    }
+  }
+}

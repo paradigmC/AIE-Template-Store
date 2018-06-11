@@ -1,0 +1,36 @@
+{
+  "result": {
+    "metaInfo": {
+      "wType": "Summary",
+      "heading": "Tax Collection",
+      "description": "Tax Collection",
+      "version": "v1"
+    },
+    "data": [
+      {
+        "key": "Property Tax",
+        "val": "11.32 % (Rs. 9.56 Cr)",
+        "order": 1
+      },
+      {
+        "key": "Water Charges",
+        "val": "12.49 % (Rs. 1.07 Cr)",
+        "order": 2
+      },
+      {
+        "key": "Other Taxes",
+        "val": "Rs. 2.72 Cr",
+        "order": 3
+      }
+    ],
+    "health": {
+      "status": "unavilable",
+      "color": "#64b903",
+      "active": "true"
+    },
+    "link": {
+      "url": "s",
+      "active": true
+    }
+  }
+}

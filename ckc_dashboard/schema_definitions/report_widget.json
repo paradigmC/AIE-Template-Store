@@ -1,77 +1,165 @@
 {
-  "metaInfo": {
-    "wType": "Timeseries",
-    "version": "v1",
-    "heading": "Today's In-Time Statistics",
-    "description": "Today's In-Time Statistics",
-    "type": "pie",
-    "frequency": 3000
-  },
-  "templateConfig": {
-    "legend": {
-      "enabled": true,
-      "itemStyle": {
-        "color": "#FFFFFF"
-      },
-      "margin": 16
-    },
-    "chart": {
-      "plotBackgroundColor": null,
-      "plotBorderWidth": null,
-      "plotShadow": false
-    },
-    "colors": [
-      "#FFF263",
-      "#50B432",
-      "#ED561B",
-      "#6AF9C4",
-      "#a1c436",
-      "#5fb4ef",
-      "#f2bc02",
-      "#f23a02"
-    ],
-    "title": {
-      "text": "In-Time Statistics"
-    },
-    "tooltip": {
-      "pointFormat": "{series.name}: <b>{point.percentage:.1f}%</b>"
-    },
-    "plotOptions": {
-      "pie": {
-        "allowPointSelect": true,
-        "cursor": "pointer",
-        "dataLabels": {
-          "enabled": true
+  "$schema": "http://json-schema.org/draft-03/schema#",
+  "type": "object",
+  "properties": {
+    "metaInfo": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "wType": {
+          "type": "string",
+          "required": true
         },
-        "showInLegend": true
+        "version": {
+          "type": "string",
+          "required": true
+        },
+        "heading": {
+          "type": "string",
+          "required": true
+        },
+        "description": {
+          "type": "string",
+          "required": true
+        },
+        "type": {
+          "type": "string",
+          "required": true
+        },
+        "frequency": {
+          "type": "number",
+          "required": true
+        }
       }
+    },
+    "templateConfig": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "legend": {
+          "type": "object",
+          "required": true,
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "required": true
+            },
+            "itemStyle": {
+              "type": "object",
+              "required": true,
+              "properties": {
+                "color": {
+                  "type": "string",
+                  "required": true
+                }
+              }
+            },
+            "margin": {
+              "type": "number",
+              "required": true
+            }
+          }
+        },
+        "chart": {
+          "type": "object",
+          "required": true,
+          "properties": {
+            "plotBackgroundColor": {
+              "type": "null",
+              "required": true
+            },
+            "plotBorderWidth": {
+              "type": "null",
+              "required": true
+            },
+            "plotShadow": {
+              "type": "boolean",
+              "required": true
+            }
+          }
+        },
+        "colors": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "required": true
+        },
+        "title": {
+          "type": "object",
+          "required": true,
+          "properties": {
+            "text": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "tooltip": {
+          "type": "object",
+          "required": true,
+          "properties": {
+            "pointFormat": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "plotOptions": {
+          "type": "object",
+          "required": true,
+          "properties": {
+            "pie": {
+              "type": "object",
+              "required": true,
+              "properties": {
+                "allowPointSelect": {
+                  "type": "boolean",
+                  "required": true
+                },
+                "cursor": {
+                  "type": "string",
+                  "required": true
+                },
+                "dataLabels": {
+                  "type": "object",
+                  "required": true,
+                  "properties": {
+                    "enabled": {
+                      "type": "boolean",
+                      "required": true
+                    }
+                  }
+                },
+                "showInLegend": {
+                  "type": "boolean",
+                  "required": true
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "data": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "required": true
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "type": "array"
+            },
+            "required": true
+          }
+        }
+      },
+      "required": true
     }
-  },
-  "data": [
-    {
-      "name": "Attendance In-Time Statistics",
-      "data": [
-        [
-          "Before 9:00",
-          23
-        ],
-        [
-          "9:00 - 9:30",
-          28
-        ],
-        [
-          "9:30 - 10:00",
-          24
-        ],
-        [
-          "10:00 - 11:00",
-          17
-        ],
-        [
-          "After 11:00",
-          6
-        ]
-      ]
-    }
-  ]
+  }
 }

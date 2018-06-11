@@ -1,0 +1,565 @@
+{
+	"result": {
+		"data": [
+			{
+				"icon_url": "https://weather.cit.api.here.com/static/weather/icon/2.png",
+				"date": "2018-06-11",
+				"rain_qty": {
+					"val": "0",
+					"label": "Rain Quantity",
+					"units": "mm",
+					"type": "number",
+					"required": "true",
+					"rawVal": ""
+				},
+				"rh_min": {
+					"val": "7",
+					"label": "Minimum Humidity",
+					"units": "%",
+					"type": "number",
+					"required": "true",
+					"rawVal": 7
+				},
+				"icon": "mostly_sunny",
+				"description": {
+					"val": "Mostly sunny. Hot.",
+					"label": "Description",
+					"type": "string",
+					"required": "true"
+				},
+				"temp_max": {
+					"val": "100.94",
+					"label": "Maximum Temperature",
+					"units": "°F",
+					"type": "number",
+					"required": "true",
+					"rawVal": 100.94
+				},
+				"wind_spd": {
+					"val": "6.89",
+					"label": "Wind Speed",
+					"units": "Miles/h",
+					"type": "number",
+					"required": "true",
+					"rawVal": 6.89
+				},
+				"Wind_shrt": {
+					"val": "SE",
+					"label": "Wind Direction",
+					"type": "string",
+					"required": "true"
+				},
+				"temp_min": {
+					"val": "76.46",
+					"label": "Minimum Temperature",
+					"units": "°F",
+					"type": "number",
+					"required": "true",
+					"rawVal": 76.46
+				},
+				"rh_max": {
+					"val": "7",
+					"label": "Maximum Humidity",
+					"units": "%",
+					"type": "number",
+					"required": "true",
+					"rawVal": 7
+				},
+				"day_sequence": {
+					"val": "2",
+					"label": "Day Sequence",
+					"type": "number",
+					"required": "true"
+				},
+				"rain_prob": {
+					"val": "0",
+					"label": "Rain Probability",
+					"units": "%",
+					"type": "number",
+					"required": "true",
+					"rawVal": 0
+				}
+			},
+			{
+				"icon_url": "https://weather.cit.api.here.com/static/weather/icon/1.png",
+				"date": "2018-06-12",
+				"rain_qty": {
+					"val": "0",
+					"label": "Rain Quantity",
+					"units": "mm",
+					"type": "number",
+					"required": "true",
+					"rawVal": ""
+				},
+				"rh_min": {
+					"val": "6",
+					"label": "Minimum Humidity",
+					"units": "%",
+					"type": "number",
+					"required": "true",
+					"rawVal": 6
+				},
+				"icon": "sunny",
+				"description": {
+					"val": "Sunny. Hot.",
+					"label": "Description",
+					"type": "string",
+					"required": "true"
+				},
+				"temp_max": {
+					"val": "105.44",
+					"label": "Maximum Temperature",
+					"units": "°F",
+					"type": "number",
+					"required": "true",
+					"rawVal": 105.44
+				},
+				"wind_spd": {
+					"val": "7.62",
+					"label": "Wind Speed",
+					"units": "Miles/h",
+					"type": "number",
+					"required": "true",
+					"rawVal": 7.62
+				},
+				"Wind_shrt": {
+					"val": "SE",
+					"label": "Wind Direction",
+					"type": "string",
+					"required": "true"
+				},
+				"temp_min": {
+					"val": "81.32",
+					"label": "Minimum Temperature",
+					"units": "°F",
+					"type": "number",
+					"required": "true",
+					"rawVal": 81.32
+				},
+				"rh_max": {
+					"val": "6",
+					"label": "Maximum Humidity",
+					"units": "%",
+					"type": "number",
+					"required": "true",
+					"rawVal": 6
+				},
+				"day_sequence": {
+					"val": "3",
+					"label": "Day Sequence",
+					"type": "number",
+					"required": "true"
+				},
+				"rain_prob": {
+					"val": "0",
+					"label": "Rain Probability",
+					"units": "%",
+					"type": "number",
+					"required": "true",
+					"rawVal": 0
+				}
+			},
+			{
+				"icon_url": "https://weather.cit.api.here.com/static/weather/icon/2.png",
+				"date": "2018-06-13",
+				"rain_qty": {
+					"val": "0",
+					"label": "Rain Quantity",
+					"units": "mm",
+					"type": "number",
+					"required": "true",
+					"rawVal": ""
+				},
+				"rh_min": {
+					"val": "7",
+					"label": "Minimum Humidity",
+					"units": "%",
+					"type": "number",
+					"required": "true",
+					"rawVal": 7
+				},
+				"icon": "mostly_sunny",
+				"description": {
+					"val": "Passing clouds. Hot.",
+					"label": "Description",
+					"type": "string",
+					"required": "true"
+				},
+				"temp_max": {
+					"val": "104.18",
+					"label": "Maximum Temperature",
+					"units": "°F",
+					"type": "number",
+					"required": "true",
+					"rawVal": 104.18
+				},
+				"wind_spd": {
+					"val": "10.33",
+					"label": "Wind Speed",
+					"units": "Miles/h",
+					"type": "number",
+					"required": "true",
+					"rawVal": 10.33
+				},
+				"Wind_shrt": {
+					"val": "S",
+					"label": "Wind Direction",
+					"type": "string",
+					"required": "true"
+				},
+				"temp_min": {
+					"val": "82.58",
+					"label": "Minimum Temperature",
+					"units": "°F",
+					"type": "number",
+					"required": "true",
+					"rawVal": 82.58
+				},
+				"rh_max": {
+					"val": "7",
+					"label": "Maximum Humidity",
+					"units": "%",
+					"type": "number",
+					"required": "true",
+					"rawVal": 7
+				},
+				"day_sequence": {
+					"val": "4",
+					"label": "Day Sequence",
+					"type": "number",
+					"required": "true"
+				},
+				"rain_prob": {
+					"val": "2",
+					"label": "Rain Probability",
+					"units": "%",
+					"type": "number",
+					"required": "true",
+					"rawVal": 2
+				}
+			},
+			{
+				"icon_url": "https://weather.cit.api.here.com/static/weather/icon/3.png",
+				"date": "2018-06-14",
+				"rain_qty": {
+					"val": "0",
+					"label": "Rain Quantity",
+					"units": "mm",
+					"type": "number",
+					"required": "true",
+					"rawVal": ""
+				},
+				"rh_min": {
+					"val": "6",
+					"label": "Minimum Humidity",
+					"units": "%",
+					"type": "number",
+					"required": "true",
+					"rawVal": 6
+				},
+				"icon": "partly_cloudy",
+				"description": {
+					"val": "a mixture of sun and clouds. Hot.",
+					"label": "Description",
+					"type": "string",
+					"required": "true"
+				},
+				"temp_max": {
+					"val": "106.16",
+					"label": "Maximum Temperature",
+					"units": "°F",
+					"type": "number",
+					"required": "true",
+					"rawVal": 106.16
+				},
+				"wind_spd": {
+					"val": "15.91",
+					"label": "Wind Speed",
+					"units": "Miles/h",
+					"type": "number",
+					"required": "true",
+					"rawVal": 15.91
+				},
+				"Wind_shrt": {
+					"val": "SW",
+					"label": "Wind Direction",
+					"type": "string",
+					"required": "true"
+				},
+				"temp_min": {
+					"val": "84.38",
+					"label": "Minimum Temperature",
+					"units": "°F",
+					"type": "number",
+					"required": "true",
+					"rawVal": 84.38
+				},
+				"rh_max": {
+					"val": "6",
+					"label": "Maximum Humidity",
+					"units": "%",
+					"type": "number",
+					"required": "true",
+					"rawVal": 6
+				},
+				"day_sequence": {
+					"val": "5",
+					"label": "Day Sequence",
+					"type": "number",
+					"required": "true"
+				},
+				"rain_prob": {
+					"val": "2",
+					"label": "Rain Probability",
+					"units": "%",
+					"type": "number",
+					"required": "true",
+					"rawVal": 2
+				}
+			},
+			{
+				"icon_url": "https://weather.cit.api.here.com/static/weather/icon/2.png",
+				"date": "2018-06-15",
+				"rain_qty": {
+					"val": "0",
+					"label": "Rain Quantity",
+					"units": "mm",
+					"type": "number",
+					"required": "true",
+					"rawVal": ""
+				},
+				"rh_min": {
+					"val": "6",
+					"label": "Minimum Humidity",
+					"units": "%",
+					"type": "number",
+					"required": "true",
+					"rawVal": 6
+				},
+				"icon": "mostly_sunny",
+				"description": {
+					"val": "Passing clouds. Hot.",
+					"label": "Description",
+					"type": "string",
+					"required": "true"
+				},
+				"temp_max": {
+					"val": "102.02",
+					"label": "Maximum Temperature",
+					"units": "°F",
+					"type": "number",
+					"required": "true",
+					"rawVal": 102.02
+				},
+				"wind_spd": {
+					"val": "19.13",
+					"label": "Wind Speed",
+					"units": "Miles/h",
+					"type": "number",
+					"required": "true",
+					"rawVal": 19.13
+				},
+				"Wind_shrt": {
+					"val": "SW",
+					"label": "Wind Direction",
+					"type": "string",
+					"required": "true"
+				},
+				"temp_min": {
+					"val": "84.38",
+					"label": "Minimum Temperature",
+					"units": "°F",
+					"type": "number",
+					"required": "true",
+					"rawVal": 84.38
+				},
+				"rh_max": {
+					"val": "6",
+					"label": "Maximum Humidity",
+					"units": "%",
+					"type": "number",
+					"required": "true",
+					"rawVal": 6
+				},
+				"day_sequence": {
+					"val": "6",
+					"label": "Day Sequence",
+					"type": "number",
+					"required": "true"
+				},
+				"rain_prob": {
+					"val": "2",
+					"label": "Rain Probability",
+					"units": "%",
+					"type": "number",
+					"required": "true",
+					"rawVal": 2
+				}
+			},
+			{
+				"icon_url": "https://weather.cit.api.here.com/static/weather/icon/2.png",
+				"date": "2018-06-16",
+				"rain_qty": {
+					"val": "0",
+					"label": "Rain Quantity",
+					"units": "mm",
+					"type": "number",
+					"required": "true",
+					"rawVal": ""
+				},
+				"rh_min": {
+					"val": "5",
+					"label": "Minimum Humidity",
+					"units": "%",
+					"type": "number",
+					"required": "true",
+					"rawVal": 5
+				},
+				"icon": "mostly_sunny",
+				"description": {
+					"val": "Mostly sunny. Hot.",
+					"label": "Description",
+					"type": "string",
+					"required": "true"
+				},
+				"temp_max": {
+					"val": "97.88",
+					"label": "Maximum Temperature",
+					"units": "°F",
+					"type": "number",
+					"required": "true",
+					"rawVal": 97.88
+				},
+				"wind_spd": {
+					"val": "15.56",
+					"label": "Wind Speed",
+					"units": "Miles/h",
+					"type": "number",
+					"required": "true",
+					"rawVal": 15.56
+				},
+				"Wind_shrt": {
+					"val": "SW",
+					"label": "Wind Direction",
+					"type": "string",
+					"required": "true"
+				},
+				"temp_min": {
+					"val": "78.80",
+					"label": "Minimum Temperature",
+					"units": "°F",
+					"type": "number",
+					"required": "true",
+					"rawVal": 78.8
+				},
+				"rh_max": {
+					"val": "5",
+					"label": "Maximum Humidity",
+					"units": "%",
+					"type": "number",
+					"required": "true",
+					"rawVal": 5
+				},
+				"day_sequence": {
+					"val": "7",
+					"label": "Day Sequence",
+					"type": "number",
+					"required": "true"
+				},
+				"rain_prob": {
+					"val": "2",
+					"label": "Rain Probability",
+					"units": "%",
+					"type": "number",
+					"required": "true",
+					"rawVal": 2
+				}
+			},
+			{
+				"icon_url": "https://weather.cit.api.here.com/static/weather/icon/3.png",
+				"date": "2018-06-17",
+				"rain_qty": {
+					"val": "0",
+					"label": "Rain Quantity",
+					"units": "mm",
+					"type": "number",
+					"required": "true",
+					"rawVal": ""
+				},
+				"rh_min": {
+					"val": "9",
+					"label": "Minimum Humidity",
+					"units": "%",
+					"type": "number",
+					"required": "true",
+					"rawVal": 9
+				},
+				"icon": "partly_cloudy",
+				"description": {
+					"val": "a mixture of sun and clouds. Hot.",
+					"label": "Description",
+					"type": "string",
+					"required": "true"
+				},
+				"temp_max": {
+					"val": "96.98",
+					"label": "Maximum Temperature",
+					"units": "°F",
+					"type": "number",
+					"required": "true",
+					"rawVal": 96.98
+				},
+				"wind_spd": {
+					"val": "4.46",
+					"label": "Wind Speed",
+					"units": "Miles/h",
+					"type": "number",
+					"required": "true",
+					"rawVal": 4.46
+				},
+				"Wind_shrt": {
+					"val": "S",
+					"label": "Wind Direction",
+					"type": "string",
+					"required": "true"
+				},
+				"temp_min": {
+					"val": "77.00",
+					"label": "Minimum Temperature",
+					"units": "°F",
+					"type": "number",
+					"required": "true",
+					"rawVal": 77
+				},
+				"rh_max": {
+					"val": "9",
+					"label": "Maximum Humidity",
+					"units": "%",
+					"type": "number",
+					"required": "true",
+					"rawVal": 9
+				},
+				"day_sequence": {
+					"val": "1",
+					"label": "Day Sequence",
+					"type": "number",
+					"required": "true"
+				},
+				"rain_prob": {
+					"val": "3",
+					"label": "Rain Probability",
+					"units": "%",
+					"type": "number",
+					"required": "true",
+					"rawVal": 3
+				}
+			}
+		],
+		"metaInfo": {
+			"wType": "WeatherForecast",
+			"heading": " Weather Forecast",
+			"description": " Weather Forecast",
+			"version": "v1"
+		}
+	}
+}

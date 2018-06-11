@@ -1,0 +1,19 @@
+{
+  "metaInfo": {
+    "wType": "videoStream",
+    "version": "v1",
+    "heading": "Today's In-Time Statistics",
+    "description": "Today's In-Time Statistics",
+    "type": "pie",
+    "frequency": 3000
+  },
+  "data": [{
+    "controls": true,
+    "maximize": true,
+    "height": 100,
+    "width": 100,
+    "type": "rtsp",
+    "autoPlay": true,
+    "url": "rtsp://10.236.197.33"
+  }]
+}

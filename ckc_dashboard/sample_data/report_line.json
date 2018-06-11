@@ -1,0 +1,117 @@
+{
+    "result": {
+        "templateConfig": {
+            "plotOptions": {
+                "line": {
+                    "dataLabels": {
+                        "formatter": "function() { var bal = (this.y).toString(); var afterPoint = ''; if (bal.indexOf('.') > 0) { afterPoint = bal.substring(x.indexOf('.'), bal.length); } bal = Math.floor(bal); bal = bal.toString(); var lastThree = bal.substring(bal.length - 3); var otherNumbers = bal.substring(0, bal.length - 3); if (otherNumbers != '') { lastThree = ',' + lastThree; } return otherNumbers.replace(/\\B(?=(\\d{2})+(?!\\d))/g, \",\") + lastThree + afterPoint; }",
+                        "enabled": true
+                    }
+                }
+            },
+            "yAxis": {
+                "title": {
+                    "text": "Collection (Rs)"
+                }
+            },
+            "exporting": {
+                "enabled": false
+            },
+            "xAxis": {
+                "categories": [
+                    "April",
+                    "May",
+                    "June",
+                    "July",
+                    "August",
+                    "September",
+                    "October",
+                    "November",
+                    "December",
+                    "January",
+                    "February",
+                    "March"
+                ]
+            },
+            "legend": {
+                "itemStyle": {
+                    "color": "#c2c5c6"
+                }
+            },
+            "tooltip": {
+                "formatter": "function() { var bal = (this.y).toString(); var afterPoint = ''; if (bal.indexOf('.') > 0) { afterPoint = bal.substring(x.indexOf('.'), bal.length); } bal = Math.floor(bal); bal = bal.toString(); var lastThree = bal.substring(bal.length - 3); var otherNumbers = bal.substring(0, bal.length - 3); if (otherNumbers != '') { lastThree = ',' + lastThree; } return '<sub>'+this.x +'</sub>'+ '<br><span style=\"color:'+ this.color+'\">\\u25CF</span> '+ this.series.name+': <b>'+ otherNumbers.replace(/\\B(?=(\\d{2})+(?!\\d))/g, \",\") + lastThree + afterPoint+'</b><br/>'; }"
+            },
+            "title": {
+                "text": "Monthly Trend of Non cumulative Property Taxes Collected"
+            },
+            "chart": {
+                "type": "line"
+            },
+            "colors": [
+                "rgb(124,236,179)",
+                "rgb(236,124,181)",
+                "rgb(124,125,236)"
+            ]
+        },
+        "data": [
+            {
+                "data": [
+                    73567147,
+                    15047807,
+                    7032079,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "name": "Current year (2018 - 2019)"
+            },
+            {
+                "data": [
+                    39496278,
+                    13818723,
+                    63077188,
+                    16006274,
+                    7773371,
+                    12125416,
+                    21377585,
+                    13210489,
+                    39219755,
+                    7008294,
+                    16880519,
+                    58914254
+                ],
+                "name": "Last Year (2017 - 2018)"
+            },
+            {
+                "data": [
+                    13421951,
+                    17347828,
+                    67188529,
+                    15147180,
+                    7180553,
+                    13836564,
+                    6282931,
+                    27413575,
+                    19576909,
+                    6279508,
+                    26243600,
+                    61935443
+                ],
+                "name": "Previous Year (2016 - 2017)"
+            }
+        ],
+        "metaInfo": {
+            "wType": "Timeseries",
+            "version": "v1",
+            "heading": "Tax Reports",
+            "description": "Tax Reports",
+            "type": "line"
+        }
+    }
+}

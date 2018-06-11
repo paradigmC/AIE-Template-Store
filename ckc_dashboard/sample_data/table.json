@@ -1,0 +1,77 @@
+{
+  "metaInfo": {
+    "wType": "Timeseries",
+    "version": "v1",
+    "heading": "Today's In-Time Statistics",
+    "description": "Today's In-Time Statistics",
+    "type": "pie",
+    "frequency": 3000
+  },
+  "templateConfig": {
+    "legend": {
+      "enabled": true,
+      "itemStyle": {
+        "color": "#FFFFFF"
+      },
+      "margin": 16
+    },
+    "chart": {
+      "plotBackgroundColor": null,
+      "plotBorderWidth": null,
+      "plotShadow": false
+    },
+    "colors": [
+      "#FFF263",
+      "#50B432",
+      "#ED561B",
+      "#6AF9C4",
+      "#a1c436",
+      "#5fb4ef",
+      "#f2bc02",
+      "#f23a02"
+    ],
+    "title": {
+      "text": "In-Time Statistics"
+    },
+    "tooltip": {
+      "pointFormat": "{series.name}: <b>{point.percentage:.1f}%</b>"
+    },
+    "plotOptions": {
+      "pie": {
+        "allowPointSelect": true,
+        "cursor": "pointer",
+        "dataLabels": {
+          "enabled": true
+        },
+        "showInLegend": true
+      }
+    }
+  },
+  "data": [
+    {
+      "name": "Attendance In-Time Statistics",
+      "data": [
+        [
+          "Before 9:00",
+          23
+        ],
+        [
+          "9:00 - 9:30",
+          28
+        ],
+        [
+          "9:30 - 10:00",
+          24
+        ],
+        [
+          "10:00 - 11:00",
+          17
+        ],
+        [
+          "After 11:00",
+          6
+        ]
+      ]
+    }
+  ]
+}

@@ -25,10 +25,6 @@
         "type": {
           "type": "string",
           "required": true
-        },
-        "frequency": {
-          "type": "number",
-          "required": true
         }
       }
     },
@@ -37,31 +33,23 @@
       "items": {
         "type": "object",
         "properties": {
-          "controls": {
-            "type": "boolean",
-            "required": true
-          },
-          "maximize": {
-            "type": "boolean",
-            "required": true
-          },
-          "height": {
-            "type": "number",
-            "required": true
-          },
-          "width": {
-            "type": "number",
-            "required": true
-          },
-          "type": {
+          "imageUrl": {
             "type": "string",
             "required": true
           },
-          "autoPlay": {
-            "type": "boolean",
+          "imageName": {
+            "type": "string",
             "required": true
           },
-          "url": {
+          "heading": {
+            "type": "string",
+            "required": true
+          },
+          "group": {
+            "type": "string",
+            "required": true
+          },
+          "thumbnailUrl": {
             "type": "string",
             "required": true
           }

@@ -1,111 +1,298 @@
 {
-  "metaInfo": {
-    "wType": "Table",
-    "heading": "VMD SingleLineText Post",
-    "description": "Variable Message Display Details",
-    "version": "v1",
-    "userActions": [
-      {
-        "actionName": "onTableSubmit",
-        "info": {
-          "type": "button",
-          "title": "Submit"
+  "$schema": "http://json-schema.org/draft-03/schema#",
+  "type": "object",
+  "properties": {
+    "metaInfo": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "wType": {
+          "type": "string",
+          "required": true
         },
-        "request": {
-          "mcc": {
-            "mccId": "5b118018d1c46c1e0a722a0d",
-            "tenantId": "poland.com",
-            "applicationId": "CKC_DASHBOARD",
-            "mapping_config_name": "ShowAllVehicles-map",
-            "operation": "DATA",
-            "dataSourceType": "Rest"
+        "heading": {
+          "type": "string",
+          "required": true
+        },
+        "description": {
+          "type": "string",
+          "required": true
+        },
+        "version": {
+          "type": "string",
+          "required": true
+        },
+        "userActions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "actionName": {
+                "type": "string",
+                "required": true
+              },
+              "info": {
+                "type": "object",
+                "required": true,
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "title": {
+                    "type": "string",
+                    "required": true
+                  }
+                }
+              },
+              "request": {
+                "type": "object",
+                "required": true,
+                "properties": {
+                  "mcc": {
+                    "type": "object",
+                    "required": true,
+                    "properties": {
+                      "mccId": {
+                        "type": "string",
+                        "required": true
+                      },
+                      "tenantId": {
+                        "type": "string",
+                        "required": true
+                      },
+                      "applicationId": {
+                        "type": "string",
+                        "required": true
+                      },
+                      "mapping_config_name": {
+                        "type": "string",
+                        "required": true
+                      },
+                      "operation": {
+                        "type": "string",
+                        "required": true
+                      },
+                      "dataSourceType": {
+                        "type": "string",
+                        "required": true
+                      }
+                    }
+                  },
+                  "requestVariables": {
+                    "type": "object",
+                    "required": true,
+                    "properties": {
+                      "fromData": {
+                        "type": "number",
+                        "required": true
+                      }
+                    }
+                  }
+                }
+              }
+            }
           },
-          "requestVariables": {
-            "fromData": "2"
-          }
+          "required": true
+        },
+        "middlewareActions": {
+          "type": "array",
+          "items": {},
+          "required": true
+        },
+        "frequency": {
+          "type": "number",
+          "required": true
         }
       }
-    ],
-    "middlewareActions": [],
-    "frequency": 3000
-  },
-  "data": {
-    "columns": [
-      {
-        "key": "acceType",
-        "type": "string",
-        "sortable": true,
-        "dataFilter": true,
-        "hidden": false,
-        "label": "Access Type"
-      },
-      {
-        "key": "fare",
-        "type": "string",
-        "dataFilter": true,
-        "hidden": false,
-        "sortable": true,
-        "label": "Fare"
-      },
-      {
-        "key": "installationDate",
-        "type": "datetime",
-        "hidden": false,
-        "sortable": true,
-        "label": "Installation Date"
-      },
-      {
-        "key": "fromDate",
-        "type": "datetime",
-        "hidden": true,
-        "sortable": true,
-        "label": "From Date"
-      }
-    ],
-    "rows": [
-      {
-        "accessType": {
-          "val": "Male",
-          "rawVal":"value",
-          "units":"U"
+    },
+    "data": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "columns": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "key": {
+                "type": "string",
+                "required": true
+              },
+              "type": {
+                "type": "string",
+                "required": true
+              },
+              "sortable": {
+                "type": "boolean",
+                "required": true
+              },
+              "dataFilter": {
+                "type": "boolean",
+                "required": true
+              },
+              "hidden": {
+                "type": "boolean",
+                "required": true
+              },
+              "label": {
+                "type": "string",
+                "required": true
+              }
+            }
+          },
+          "required": true
         },
-        "fare": {
-          "val": "Free",
-          "rawVal":"value",
-          "units":"U"
-        },
-        "installationDate": {
-          "val": "2017-10-11T06:25:06.649Z",
-          "rawVal":"value",
-          "units":"U"
+        "rows": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "accessType": {
+                "type": "object",
+                "required": true,
+                "properties": {
+                  "val": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "rawVal": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "units": {
+                    "type": "string",
+                    "required": true
+                  }
+                }
+              },
+              "fare": {
+                "type": "object",
+                "required": true,
+                "properties": {
+                  "val": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "rawVal": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "units": {
+                    "type": "string",
+                    "required": true
+                  }
+                }
+              },
+              "installationDate": {
+                "type": "object",
+                "required": true,
+                "properties": {
+                  "val": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "rawVal": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "units": {
+                    "type": "string",
+                    "required": true
+                  }
+                }
+              }
+            }
+          },
+          "required": true
         }
       }
-    ]
-  },
-  "xform": [
-    {
-      "actionName": "onTableSubmit",
-      "fields": [
-        {
-          "type": "date",
-          "lable": "From Date",
-          "format": "mm-dd-yyyy",
-          "value": "",
-          "name": "fromData",
-          "id": "fromDate",
-          "placeholder": "From Date",
-          "validations": {
-            "min": "",
-            "max": "",
+    },
+    "xform": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "actionName": {
+            "type": "string",
             "required": true
           },
-          "errors": {
-            "required": "From Date is Required",
-            "min": "",
-            "max": ""
+          "fields": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "required": true
+                },
+                "lable": {
+                  "type": "string",
+                  "required": true
+                },
+                "format": {
+                  "type": "string",
+                  "required": true
+                },
+                "value": {
+                  "type": "number",
+                  "required": true
+                },
+                "name": {
+                  "type": "string",
+                  "required": true
+                },
+                "id": {
+                  "type": "string",
+                  "required": true
+                },
+                "placeholder": {
+                  "type": "string",
+                  "required": true
+                },
+                "validations": {
+                  "type": "object",
+                  "required": true,
+                  "properties": {
+                    "min": {
+                      "type": "number",
+                      "required": true
+                    },
+                    "max": {
+                      "type": "number",
+                      "required": true
+                    },
+                    "required": {
+                      "type": "boolean",
+                      "required": true
+                    }
+                  }
+                },
+                "errors": {
+                  "type": "object",
+                  "required": true,
+                  "properties": {
+                    "required": {
+                      "type": "string",
+                      "required": true
+                    },
+                    "min": {
+                      "type": "number",
+                      "required": true
+                    },
+                    "max": {
+                      "type": "number",
+                      "required": true
+                    }
+                  }
+                }
+              }
+            },
+            "required": true
           }
         }
-      ]
+      },
+      "required": true
     }
-  ]
+  }
 }

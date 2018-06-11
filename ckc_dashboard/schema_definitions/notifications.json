@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema#",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "type": {
+          "type": "string",
+          "required": true
+        },
+        "domain": {
+          "type": "string",
+          "required": true
+        },
+        "time": {
+          "type": "string",
+          "required": true
+        },
+        "heading": {
+          "type": "string",
+          "required": true
+        },
+        "text": {
+          "type": "string",
+          "required": true
+        }
+      }
+    }
+  }
+}

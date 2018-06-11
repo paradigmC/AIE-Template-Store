@@ -1,0 +1,105 @@
+{
+  "metaInfo": {
+    "wType": "popover",
+    "version": "v1",
+    "heading": "Sensor Details Popover",
+    "description": "Sensor Details Popover",
+    "userActions": [
+      {
+        "actionName": "onVideoStreamClick",
+        "info": {
+          "type": "button",
+          "title": "Save"
+        },
+        "request": {
+          "mcc": {
+            "mccId": "5b118018d1c46c1e0a722a0d",
+            "tenantId": "poland.com",
+            "applicationId": "CKC_DASHBOARD",
+            "mapping_config_name": "ShowAllVehicles-map",
+            "operation": "DATA",
+            "dataSourceType": "Rest"
+          },
+          "requestVariables": {
+            "sensorId": ""
+          }
+        }
+      }
+    ],
+    "middlewareActions": [
+      {
+        "actionName": "onVideoStream",
+        "info": {
+          "type": "stream"
+        },
+        "request": {
+          "mcc": {
+            "mccId": "5b118018d1c46c1e0a722a0d",
+            "tenantId": "poland.com",
+            "applicationId": "CKC_DASHBOARD",
+            "mapping_config_name": "ShowAllVehicles-map",
+            "operation": "DATA",
+            "dataSourceType": "Rest"
+          },
+          "requestVariables": {
+            "sensorId": ""
+          }
+        }
+      },
+      {
+        "actionName": "onReports",
+        "info": {
+          "type": "report"
+        },
+        "request": {
+          "mcc": {
+            "mccId": "5b118018d1c46c1e0a722a0d",
+            "tenantId": "poland.com",
+            "applicationId": "CKC_DASHBOARD",
+            "mapping_config_name": "ShowAllVehicles-map",
+            "operation": "DATA",
+            "dataSourceType": "Rest"
+          },
+          "requestVariables": {
+            "sensorId": ""
+          }
+        }
+      }
+    ]
+  },
+  "data": [],
+  "xform": [
+    {
+      "type": "text",
+      "label": "Image Url",
+      "value": "",
+      "name": "imageUrl",
+      "validations": {
+        "minlength": "",
+        "maxlength": "",
+        "required": true
+      },
+      "errors": {
+        "required": "Image Url Required",
+        "minlength": "xyz",
+        "maxlength": "xyz"
+      }
+    },
+    {
+      "type": "text",
+      "label": "Image Url",
+      "value": "",
+      "name": "videoUrl",
+      "validations": {
+        "minlength": "",
+        "maxlength": "",
+        "required": true
+      },
+      "errors": {
+        "required": "Image Url Required",
+        "minlength": "xyz",
+        "maxlength": "xyz"
+      }
+    }
+  ]
+}

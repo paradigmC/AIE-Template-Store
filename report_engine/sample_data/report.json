@@ -1,0 +1,210 @@
+{
+  "result": {
+    "data": [
+      {
+        "geometry": {
+          "type": "Point",
+          "coordinates": {
+            "lat": 50.0780338,
+            "lon": 14.4491096
+          }
+        },
+        "name": "Prague Environment",
+        "parentId": "",
+        "metricProperties": {
+          "temperature": {
+            "type": "number",
+            "required": true,
+            "val": 22.78,
+            "unit": "°C"
+          },
+          "humidity": {
+            "type": "number",
+            "required": true,
+            "val": 70,
+            "unit": "%"
+          },
+          "noise": {
+            "type": "number",
+            "required": true,
+            "val": 64,
+            "unit": "dB"
+          }
+        },
+        "entityProperties": {
+          "name": {
+            "type": "string",
+            "val": "Lavička - Náměstí Jiřího z Poděbrad",
+            "required": true
+          },
+          "providerName": {
+            "type": "string",
+            "required": true,
+            "val": "MECompany"
+          }
+        },
+        "timestamp": "2018-06-11T10:02:25.000Z",
+        "identifier": "Lavička - Náměstí Jiřího z Poděbrad",
+        "dbOperation": "IGNORE",
+        "tenant": "prague",
+        "tenantId": "prague.com",
+        "granularity": "rawData",
+        "configName": "reports"
+      },
+      {
+        "geometry": {
+          "type": "Point",
+          "coordinates": {
+            "lat": 50.0732647,
+            "lon": 14.4039801
+          }
+        },
+        "name": "Prague Environment",
+        "parentId": "",
+        "metricProperties": {
+          "temperature": {
+            "type": "number",
+            "required": true,
+            "val": 23.9,
+            "unit": "°C"
+          },
+          "humidity": {
+            "type": "number",
+            "required": true,
+            "val": 62,
+            "unit": "%"
+          },
+          "airQuality": {
+            "type": "number",
+            "required": true,
+            "val": 98
+          }
+        },
+        "entityProperties": {
+          "name": {
+            "type": "string",
+            "required": true,
+            "val": "Lavička - Náměstí 14.Října"
+          },
+          "providerName": {
+            "type": "string",
+            "required": true,
+            "val": "Powermode"
+          }
+        },
+        "timestamp": "2018-06-11T09:45:00.000Z",
+        "identifier": "Lavička - Náměstí 14.Října",
+        "dbOperation": "IGNORE",
+        "tenant": "prague",
+        "tenantId": "prague.com",
+        "granularity": "rawData",
+        "configName": "reports"
+      },
+      {
+        "geometry": {
+          "type": "Point",
+          "coordinates": {
+            "lat": 50.0929963,
+            "lon": 14.4469276
+          }
+        },
+        "name": "Prague Environment",
+        "parentId": "",
+        "metricProperties": {
+          "temperature": {
+            "type": "number",
+            "required": true,
+            "val": 23.8,
+            "unit": "°C"
+          },
+          "humidity": {
+            "type": "number",
+            "required": true,
+            "val": 99,
+            "unit": "%"
+          },
+          "airQuality": {
+            "type": "number",
+            "required": true,
+            "val": 97
+          }
+        },
+        "entityProperties": {
+          "name": {
+            "type": "string",
+            "required": true,
+            "val": "Lavička - Sokolovská"
+          },
+          "providerName": {
+            "type": "string",
+            "required": true,
+            "val": "Powermode"
+          }
+        },
+        "timestamp": "2018-06-11T09:42:01.000Z",
+        "identifier": "Lavička - Sokolovská",
+        "dbOperation": "IGNORE",
+        "tenant": "prague",
+        "tenantId": "prague.com",
+        "granularity": "rawData",
+        "configName": "reports"
+      },
+      {
+        "geometry": {
+          "type": "Point",
+          "coordinates": {
+            "lat": 50.0750724,
+            "lon": 14.4369546
+          }
+        },
+        "name": "Prague Environment",
+        "metricProperties": {
+          "temperature": {
+            "type": "number",
+            "required": true,
+            "val": 50.81,
+            "unit": "°C"
+          },
+          "humidity": {
+            "type": "number",
+            "required": true,
+            "val": 15.11,
+            "unit": "%"
+          },
+          "co2": {
+            "type": "number",
+            "required": true,
+            "val": 895515.3,
+            "unit": "ppb"
+          },
+          "pressure": {
+            "type": "number",
+            "required": true,
+            "val": 100753.7,
+            "unit": "pa"
+          }
+        },
+        "entityProperties": {
+          "name": {
+            "type": "string",
+            "required": true,
+            "val": "Lavička - Náměstí Míru"
+          },
+          "providerName": {
+            "type": "string",
+            "required": true,
+            "val": "Ability"
+          }
+        },
+        "timestamp": "2018-06-09T16:16:38.000Z",
+        "identifier": "Lavička - Náměstí Míru",
+        "dbOperation": "IGNORE",
+        "tenant": "prague",
+        "tenantId": "prague.com",
+        "granularity": "rawData",
+        "parentId": "",
+        "configName": "reports"
+      }
+    ]
+  }
+}

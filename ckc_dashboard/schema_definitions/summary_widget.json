@@ -1,32 +1,81 @@
 {
-  "metaInfo": {
-    "wType": "Summary",
-    "version": "v1",
-    "heading": "Variable Message Display",
-    "description": "Variable Message Display",
-    "frequency": 3000
-  },
-  "data": [
-    {
-      "key": "Total VMD's",
-      "val": 0
+  "$schema": "http://json-schema.org/draft-03/schema#",
+  "type": "object",
+  "properties": {
+    "metaInfo": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "wType": {
+          "type": "string",
+          "required": true
+        },
+        "version": {
+          "type": "string",
+          "required": true
+        },
+        "heading": {
+          "type": "string",
+          "required": true
+        },
+        "description": {
+          "type": "string",
+          "required": true
+        },
+        "frequency": {
+          "type": "number",
+          "required": true
+        }
+      }
     },
-    {
-      "key": "Active VMD's",
-      "val": 0
+    "data": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "key": {
+            "type": "string",
+            "required": true
+          },
+          "val": {
+            "type": "number",
+            "required": true
+          }
+        }
+      },
+      "required": true
     },
-    {
-      "key": "InActive VMD's",
-      "val": 0
+    "link": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "url": {
+          "type": "string",
+          "required": true
+        },
+        "active": {
+          "type": "boolean",
+          "required": true
+        }
+      }
+    },
+    "health": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "status": {
+          "type": "string",
+          "required": true
+        },
+        "color": {
+          "type": "string",
+          "required": true
+        },
+        "active": {
+          "type": "boolean",
+          "required": true
+        }
+      }
     }
-  ],
-  "link": {
-    "url": "s",
-    "active": true
-  },
-  "health": {
-    "status":"good",
-    "color":"#FFF",
-    "active": true
   }
 }

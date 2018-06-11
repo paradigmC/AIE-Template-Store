@@ -1,0 +1,61 @@
+{
+  "result": {
+    "metaInfo": {
+      "wType": "gallery",
+      "version": "v1",
+      "heading": "Black Spot Gallery",
+      "description": "Black Spot Gallery",
+      "type": "multi"
+    },
+    "data": [
+      {
+        "groupHeading": "Master Images",
+        "imageUrl": "http://45.114.246.184/bsmimgsave/20180325010056006212/201803250100560062121.JPG",
+        "thumbnailUrl": "http://45.114.246.184/bsmimgsave/20180325010056006212/201803250100560062121.JPG",
+        "imageName": "South-East"
+      },
+      {
+        "groupHeading": "Master Images",
+        "imageUrl": "http://45.114.246.184/bsmimgsave/20180325010056006212/201803250100560062122.JPG",
+        "thumbnailUrl": "http://45.114.246.184/bsmimgsave/20180325010056006212/201803250100560062122.JPG",
+        "imageName": "East"
+      },
+      {
+        "groupHeading": "Master Images",
+        "imageUrl": "http://45.114.246.184/bsmimgsave/20180325010056006212/201803250100560062123.JPG",
+        "thumbnailUrl": "http://45.114.246.184/bsmimgsave/20180325010056006212/201803250100560062123.JPG",
+        "imageName": "West"
+      },
+      {
+        "groupHeading": "Master Images",
+        "imageUrl": "http://45.114.246.184/bsmimgsave/20180325010056006212/201803250100560062124.JPG",
+        "thumbnailUrl": "http://45.114.246.184/bsmimgsave/20180325010056006212/201803250100560062124.JPG",
+        "imageName": "North-West"
+      },
+      {
+        "groupHeading": "Inspection Images",
+        "imageUrl": "http://45.114.246.184/Inspecimages/201806110413481385840/2018061104134813858401.JPG",
+        "thumbnailUrl": "http://45.114.246.184/Inspecimages/201806110413481385840/2018061104134813858401.JPG",
+        "imageName": "South-East"
+      },
+      {
+        "groupHeading": "Inspection Images",
+        "imageUrl": "http://45.114.246.184/Inspecimages/201806110413481385840/2018061104134813858402.JPG",
+        "thumbnailUrl": "http://45.114.246.184/Inspecimages/201806110413481385840/2018061104134813858402.JPG",
+        "imageName": "East"
+      },
+      {
+        "groupHeading": "Inspection Images",
+        "imageUrl": "http://45.114.246.184/Inspecimages/201806110413481385840/2018061104134813858403.JPG",
+        "thumbnailUrl": "http://45.114.246.184/Inspecimages/201806110413481385840/2018061104134813858403.JPG",
+        "imageName": "West"
+      },
+      {
+        "groupHeading": "Inspection Images",
+        "imageUrl": "http://45.114.246.184/Inspecimages/201806110413481385840/2018061104134813858404.JPG",
+        "thumbnailUrl": "http://45.114.246.184/Inspecimages/201806110413481385840/2018061104134813858404.JPG",
+        "imageName": "North-West"
+      }
+    ]
+  }
+}

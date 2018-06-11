@@ -1,120 +1,345 @@
 {
-  "metaInfo": {
-    "wType": "GeoSpatial",
-    "version": "v1",
-    "heading": "Disaster Management",
-    "description": "Disaster Management",
-    "userActions": [
-      {
-        "actionName": "onGenerateButton",
-        "info": {
-          "type": "button",
-          "title": "Generate Report"
-        },
-        "request": {
-          "mcc": {
-            "mccId": "5b118018d1c46c1e0a722a0d",
-            "tenantId": "poland.com",
-            "applicationId": "CKC_DASHBOARD",
-            "mapping_config_name": "ShowAllVehicles-map",
-            "operation": "DATA",
-            "dataSourceType": "Rest"
-          },
-          "requestVariables": {
-            "id": 1
-          }
-        }
-      },
-      {
-        "actionName": "onVideoStream",
-        "info": {
-          "type": "button",
-          "title": "Video Stream"
-        },
-        "request": {
-          "endpointName": "",
-          "mcc": {
-            "mccId": "5b118018d1c46c1e0a722a0d",
-            "tenantId": "poland.com",
-            "applicationId": "CKC_DASHBOARD",
-            "mapping_config_name": "ShowAllVehicles-map",
-            "operation": "DATA",
-            "dataSourceType": "Rest"
-          },
-          "requestVariables": {
-            "id": 1
-          }
-        }
-      }
-    ],
-    "middlewareActions": [
-      {
-        "info": {
-          "type": "videoStream"
-        },
-        "request": {
-          "mcc": {
-            "target_config_name": "aggregatee",
-            "target_group_name": "EMSDashboard",
-            "mapping_config_name": "EMSDummyUrl-aggregatee",
-            "mapping_group_name": "CKC",
-            "groupName": "EMSDashboard",
-            "configName": "aggregatee"
-          },
-          "requestVariables": {
-            "toDate": "",
-            "fromDate": ""
-          }
-        }
-      }
-    ]
-  },
-  "data": [
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": {
-          "lat": 76.7755012,
-          "lon": 30.7017952
-        }
-      },
+  "$schema": "http://json-schema.org/draft-03/schema#",
+  "type": "object",
+  "properties": {
+    "metaInfo": {
+      "type": "object",
+      "required": true,
       "properties": {
-        "name": "Disaster Management",
-        "cusID": {
-          "type": "number",
-          "required": true,
-          "label": "CCMS ID",
-          "val": "123",
-          "hidden":"false",
-          "rawVal":"123",
-          "units":""
-        },
-        "powerConsumption": {
+        "wType": {
           "type": "string",
-          "required": true,
-          "label": "Lights Connected",
-          "val": "1000KW",
-          "hidden":"false",
-          "rawVal":"1000",
-          "units":"KW"
+          "required": true
         },
-        "videoStream": {
-          "type": "stream",
-          "required": true,
-          "label": "Camara Info",
-          "val": {
-            "controls": true,
-            "maximize": true,
-            "height": 100,
-            "width": 100,
-            "type": "rtsp",
-            "autoPlay": true,
-            "url": "rtsp://10.236.197.33"
+        "version": {
+          "type": "string",
+          "required": true
+        },
+        "heading": {
+          "type": "string",
+          "required": true
+        },
+        "description": {
+          "type": "string",
+          "required": true
+        },
+        "userActions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "actionName": {
+                "type": "string",
+                "required": true
+              },
+              "info": {
+                "type": "object",
+                "required": true,
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "title": {
+                    "type": "string",
+                    "required": true
+                  }
+                }
+              },
+              "request": {
+                "type": "object",
+                "required": true,
+                "properties": {
+                  "mcc": {
+                    "type": "object",
+                    "required": true,
+                    "properties": {
+                      "mccId": {
+                        "type": "string",
+                        "required": true
+                      },
+                      "tenantId": {
+                        "type": "string",
+                        "required": true
+                      },
+                      "applicationId": {
+                        "type": "string",
+                        "required": true
+                      },
+                      "mapping_config_name": {
+                        "type": "string",
+                        "required": true
+                      },
+                      "operation": {
+                        "type": "string",
+                        "required": true
+                      },
+                      "dataSourceType": {
+                        "type": "string",
+                        "required": true
+                      }
+                    }
+                  },
+                  "requestVariables": {
+                    "type": "object",
+                    "required": true,
+                    "properties": {
+                      "id": {
+                        "type": "number",
+                        "required": true
+                      }
+                    }
+                  },
+                  "endpointName": {
+                    "type": "number",
+                    "required": false
+                  }
+                }
+              }
+            }
           },
-          "hidden":"false"
+          "required": true
+        },
+        "middlewareActions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "info": {
+                "type": "object",
+                "required": true,
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "required": true
+                  }
+                }
+              },
+              "request": {
+                "type": "object",
+                "required": true,
+                "properties": {
+                  "mcc": {
+                    "type": "object",
+                    "required": true,
+                    "properties": {
+                      "target_config_name": {
+                        "type": "string",
+                        "required": true
+                      },
+                      "target_group_name": {
+                        "type": "string",
+                        "required": true
+                      },
+                      "mapping_config_name": {
+                        "type": "string",
+                        "required": true
+                      },
+                      "mapping_group_name": {
+                        "type": "string",
+                        "required": true
+                      },
+                      "groupName": {
+                        "type": "string",
+                        "required": true
+                      },
+                      "configName": {
+                        "type": "string",
+                        "required": true
+                      }
+                    }
+                  },
+                  "requestVariables": {
+                    "type": "object",
+                    "required": true,
+                    "properties": {
+                      "toDate": {
+                        "type": "number",
+                        "required": true
+                      },
+                      "fromDate": {
+                        "type": "number",
+                        "required": true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "required": true
         }
       }
+    },
+    "data": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "required": true
+          },
+          "geometry": {
+            "type": "object",
+            "required": true,
+            "properties": {
+              "type": {
+                "type": "string",
+                "required": true
+              },
+              "coordinates": {
+                "type": "object",
+                "required": true,
+                "properties": {
+                  "lat": {
+                    "type": "number",
+                    "required": true
+                  },
+                  "lon": {
+                    "type": "number",
+                    "required": true
+                  }
+                }
+              }
+            }
+          },
+          "properties": {
+            "type": "object",
+            "required": true,
+            "properties": {
+              "name": {
+                "type": "string",
+                "required": true
+              },
+              "cusID": {
+                "type": "object",
+                "required": true,
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "required": {
+                    "type": "boolean",
+                    "required": true
+                  },
+                  "label": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "val": {
+                    "type": "number",
+                    "required": true
+                  },
+                  "hidden": {
+                    "type": "boolean",
+                    "required": true
+                  },
+                  "rawVal": {
+                    "type": "number",
+                    "required": true
+                  },
+                  "units": {
+                    "type": "number",
+                    "required": true
+                  }
+                }
+              },
+              "powerConsumption": {
+                "type": "object",
+                "required": true,
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "required": {
+                    "type": "boolean",
+                    "required": true
+                  },
+                  "label": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "val": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "hidden": {
+                    "type": "boolean",
+                    "required": true
+                  },
+                  "rawVal": {
+                    "type": "number",
+                    "required": true
+                  },
+                  "units": {
+                    "type": "string",
+                    "required": true
+                  }
+                }
+              },
+              "videoStream": {
+                "type": "object",
+                "required": true,
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "required": {
+                    "type": "boolean",
+                    "required": true
+                  },
+                  "label": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "val": {
+                    "type": "object",
+                    "required": true,
+                    "properties": {
+                      "controls": {
+                        "type": "boolean",
+                        "required": true
+                      },
+                      "maximize": {
+                        "type": "boolean",
+                        "required": true
+                      },
+                      "height": {
+                        "type": "number",
+                        "required": true
+                      },
+                      "width": {
+                        "type": "number",
+                        "required": true
+                      },
+                      "type": {
+                        "type": "string",
+                        "required": true
+                      },
+                      "autoPlay": {
+                        "type": "boolean",
+                        "required": true
+                      },
+                      "url": {
+                        "type": "string",
+                        "required": true
+                      }
+                    }
+                  },
+                  "hidden": {
+                    "type": "boolean",
+                    "required": true
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "required": true
     }
-  ]
+  }
 }

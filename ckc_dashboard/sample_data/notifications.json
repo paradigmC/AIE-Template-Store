@@ -1,0 +1,9 @@
+{
+  "data": {
+    "type": "information",
+    "domain": "SmartParking",
+    "time": "2018-06-11T09:42:01.000Z",
+    "heading": "Parking Info",
+    "text": "Parking Spot 12 at Inox is free at latitude : 12.1231, longitude : 65.323"
+  }
+}
